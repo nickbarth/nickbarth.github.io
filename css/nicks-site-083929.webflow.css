@@ -1232,6 +1232,7 @@ figcaption {
 
 .gallery-image {
   width: 100%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
 .gallery-slide-text {
