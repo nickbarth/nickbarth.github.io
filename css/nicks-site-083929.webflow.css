@@ -1583,15 +1583,17 @@ figcaption {
   margin-left: 5px;
   padding: 5px 10px;
   font-family: Ubuntu, Helvetica, sans-serif;
-  color: #1a1b1f;
+  color: #747474;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.25px;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .nav-link:hover {
-  color: rgba(26, 27, 31, 0.75);
+  color: #32343a;
+  font-weight: 500;
 }
 
 .nav-link:focus-visible {
