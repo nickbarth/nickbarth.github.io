@@ -78,7 +78,7 @@ p {
 a {
   display: block;
   -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
+  transition: 200ms ease;
   color: #1a1b1f;
   text-decoration: none;
 }
@@ -1172,6 +1172,51 @@ figcaption {
   font-family: Ubuntu, Helvetica, sans-serif;
   font-weight: 700;
   text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+.hero-link:hover {
+    color: #777;
+}
+
+a.hero-link {
+    position: relative;
+}
+
+a.hero-link:after {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 5px;
+    background-color: #5d9de5;
+    content: "";
+    transition: width 0.15s ease-in-out;
+}
+
+a.hero-link:hover:after {
+    width: 100%;
+}
+
+a.nav-link {
+    position: relative;
+}
+
+a.nav-link:after {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 5px;
+    background-color: #5d9de5;
+    content: "";
+    transition: width 0.15s ease-in-out;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
 }
 
 .gallery-slider {
@@ -1481,11 +1526,12 @@ figcaption {
 }
 
 .gallery-link:hover {
-  color: rgba(26, 27, 31, 0.8);
+  color: #777;
 }
 
 .gallery-link.w--current {
   font-weight: 600;
+  color: #000 !important;
 }
 
 .gallery-grid {
@@ -1594,7 +1640,7 @@ figcaption {
 
 .nav-link:hover {
   color: #32343a;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-link:focus-visible {
